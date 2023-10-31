@@ -1,0 +1,7 @@
+services:
+  content_crawler.scraper:
+    class: Drupal\content_crawler\Service\Scraper
+  content_crawler.migrate_data_storage:
+    class: Drupal\content_crawler\Service\MigrateDataStorage
+    arguments:
+      - '@entity_type.manager'

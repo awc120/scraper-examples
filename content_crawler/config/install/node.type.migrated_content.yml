@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  module: {}
+third_party_settings: {}
+name: 'Migrated content'
+type: migrated_content
+description: 'This is a content type used to pull in scraped website content.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

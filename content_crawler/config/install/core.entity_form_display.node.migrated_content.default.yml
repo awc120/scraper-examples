@@ -1,0 +1,97 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.migrated_content.field_body
+    - field.field.node.migrated_content.field_import_date
+    - field.field.node.migrated_content.field_imported_images
+    - field.field.node.migrated_content.field_migration_notes
+    - field.field.node.migrated_content.field_page_title
+    - field.field.node.migrated_content.field_scraped_data
+    - field.field.node.migrated_content.field_source_link
+    - node.type.migrated_content
+  module:
+    - datetime
+    - link
+    - media_library
+    - text
+id: node.migrated_content.default
+targetEntityType: node
+bundle: migrated_content
+mode: default
+content:
+  field_body:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_import_date:
+    type: datetime_default
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_imported_images:
+    type: media_library_widget
+    weight: 5
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_migration_notes:
+    type: text_textarea
+    weight: 6
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_page_title:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_scraped_data:
+    type: text_textarea
+    weight: 7
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_source_link:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  moderation_state: true
+  path: true
+  promote: true
+  publish_on: true
+  publish_state: true
+  simple_sitemap: true
+  status: true
+  sticky: true
+  uid: true
+  unpublish_on: true
+  unpublish_state: true
+  url_redirects: true

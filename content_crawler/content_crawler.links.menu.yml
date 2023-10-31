@@ -1,0 +1,13 @@
+content_crawler.migrate_dashboard:
+  title: 'Migration Dashboard'
+  description: 'View and manage migrated content.'
+  parent: system.admin_content
+  route_name: view.migrate_manager.dashboard
+  menu_name: admin
+
+content_crawler.crawler_form:
+  title: 'Crawler'
+  description: 'Crawl a page or a site by navigation menu.'
+  parent: system.admin_content
+  route_name: content_crawler.crawler_form
+  menu_name: admin

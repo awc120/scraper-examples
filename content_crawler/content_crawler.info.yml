@@ -1,0 +1,8 @@
+name: 'Content Crawler'
+description: 'Example module to show how to crawl content from a public website and import it directly into the Drupal CMS.'
+type: module
+package: Test
+core_version_requirement: '^10'
+dependencies:
+  - drupal:media_library
+  - drupal:views_bulk_operations

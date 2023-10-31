@@ -1,0 +1,12 @@
+{
+    "name": "andrew/dcoagcs-scraper",
+    "authors": [
+        {
+            "name": "Andrew Cox",
+            "email": "andrew@ifsight.com"
+        }
+    ],
+    "require": {
+        "simplehtmldom/simplehtmldom": "2.0rc2"
+    }
+}

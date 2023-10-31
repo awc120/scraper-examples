@@ -1,0 +1,9 @@
+content_crawler.crawler_form:
+  path: '/admin/content/crawler'
+  defaults:
+    _form: '\Drupal\content_crawler\Form\CrawlerForm'
+    _title: 'Content Crawler'
+  requirements:
+    _permission: 'administer content types'
+  options:
+    _admin_route: TRUE
